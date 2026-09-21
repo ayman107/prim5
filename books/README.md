@@ -9,10 +9,10 @@
 
 كل صورة تُسمّى برقم الصفحة (بدون أصفار بادئة):
 ```
-books/<subjectId>/<pageNumber>.png
+books/<subjectId>/<pageNumber>.jpg
 ```
 
-مثال: `books/arabic/4.png`, `books/arabic/5.png`, … `books/arabic/12.png`
+مثال: `books/arabic/4.jpg`, `books/arabic/5.jpg`, … `books/arabic/12.jpg`
 
 ## رموز المواد وأرقام صفحاتها
 
@@ -41,7 +41,7 @@ node prepare-books.js <subjectId> <مجلد_الصور>
 مثال: `node prepare-books.js arabic C:\scans\arabic\`
 
 - يقبل الصور `png / jpg / jpeg / webp` ويحوّلها إلى `PNG` في `books/arabic/`.
-- أسماء الملفات تُرتب رقمياً (مثل `page04`, `page_4`, `4 a`) ويُستخدم **ترتيب الملفات ذاته** كأرقام صفحات، أو رقم الصفحة المكتوب في اسم الملف إن وُجد (مثل `page 12.png` → `12.png`).
+- أسماء الملفات تُرتب رقمياً (مثل `page04`, `page_4`, `4 a`) ويُستخدم **ترتيب الملفات ذاته** كأرقام صفحات، أو رقم الصفحة المكتوب في اسم الملف إن وُجد (مثل `page 12.jpg` → `12.jpg`).
 - إن كان الملف `PDF`، تتم محاولة تحويله صورة-صورة عبر `pdfjs-dist` (يتطلب `npm i pdfjs-dist @napi-rs/canvas`).
 
 ### 2) عدم توفر صور بعد
