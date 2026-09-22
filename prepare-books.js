@@ -13,8 +13,8 @@ if (!subject || !src) {
   console.log('usage: node prepare-books.js <subjectId> <sourceDirOrPdf>');
   process.exit(1);
 }
-if (!/^[a-z0-9-]+$/.test(subject)) {
-  console.log('subjectId must be lowercase letters/digits/hyphen, e.g. arabic, science-en');
+if (!/^[a-z]+$/.test(subject)) {
+  console.log('subjectId must be lowercase letters, e.g. arabic, math');
   process.exit(1);
 }
 
